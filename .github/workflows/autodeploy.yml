@@ -28,7 +28,7 @@ jobs:
         run: |
           export TZ='Asia/Shanghai'
           npm install hexo-cli -g
-          npm install hexo-deployer-git --save
+          # npm install hexo-deployer-git --save
 
       - name: 缓存 Hexo
         uses: actions/cache@v3
@@ -51,7 +51,7 @@ jobs:
         run: |
           git config --global user.name "fu-jw"
           git config --global user.email "1151242757@qq.com"
-          # git clone https://github.com/fu-jw/fu-jw.github.io.git .deploy_git
+          git clone https://github.com/fu-jw/fu-jw.github.io.git .deploy_git
           # 此处务必用HTTPS链接。SSH链接可能有权限报错的隐患
           # =====注意.deploy_git前面有个空格=====
           # 这行指令的目的是clone博客静态文件仓库，防止Hexo推送时覆盖整个静态文件仓库，而是只推送有更改的文件
@@ -66,4 +66,4 @@ jobs:
           pass: ${{ secrets.USER_PASS }}
           connect_timeout: 10s
           local: './.deploy_git/*'
-          remote: /www/wwwroot/blog.fu-jw.com
+          remote: /www/wwwroot/blog.fu-jw.com/
