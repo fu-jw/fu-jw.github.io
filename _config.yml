@@ -103,7 +103,7 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: 'git'
-    repo: 'git@github.com:fu-jw/fu-jw.github.io.git'
+    repo: 'https://github.com/fu-jw/fu-jw.github.io.git'
     branch: master
   - type: rsync
     host: 123.57.133.62
