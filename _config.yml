@@ -104,3 +104,4 @@ theme: landscape
 deploy:
   type: 'git'
   repo: 'https://github.com/fu-jw/fu-jw.github.io.git'
+  branch: master
