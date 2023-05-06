@@ -106,6 +106,6 @@ deploy:
   #  host: 123.57.133.62
   #  user: root
   #  root: /www/wwwroot/blog.fu-jw.com
-  - type: 'git'
-    repo:  'https://github.com/fu-jw/fu-jw.github.io.git' #'git@github.com:fu-jw/fu-jw.github.io.git'
+  - type: git
+    repo:  https://github.com/fu-jw/fu-jw.github.io.git #'git@github.com:fu-jw/fu-jw.github.io.git'
     branch: master
