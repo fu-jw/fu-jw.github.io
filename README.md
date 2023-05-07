@@ -1,2 +1,2 @@
 # hexoBlog
-Hexo Blog 的源码文件库
+Hexo Blog 文件库
