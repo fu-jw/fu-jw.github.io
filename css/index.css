@@ -15782,7 +15782,9 @@ body:has(.post-bg) #he-plugin-simple .s-sticker div {
 
 @media screen and (max-width: 1400px) {
   #he-plugin-simple {
-    left: 120px !important;
+    /*left: 120px !important*/
+    /* 修改天气覆盖问题 */
+    left: 220px !important;  
     opacity: 1;
     display: block;
   }
