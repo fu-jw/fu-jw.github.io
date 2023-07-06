@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>SpringBoot Web开发3-内容协商 | Fredo's Blog</title><meta name="keywords" content="SpringBoot"><meta name="author" content="Fredo"><meta name="copyright" content="Fredo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="SpringBoot Web开发3-内容协商"><meta name="application-name" content="SpringBoot Web开发3-内容协商"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="SpringBoot Web开发3-内容协商3.内容协商1.HTTP内容协商在HTTP协议中,内容协商是一种机制,用于为同一URI提供资源不同的表示形式,以帮助用户代理指定最适合用户的表示形式例如,哪种文档语言,哪种图片格式或者哪种内容编码 内容协商通常有两种方式,服务端驱动型内容协商和代理驱动型内容协商 服务端驱动型内容协商在服务端驱动型内容协商或者主动内容协商中,浏览器（或者其他任何类型的用户">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>SpringBoot核心特性 | Fredo's Blog</title><meta name="keywords" content="SpringBoot"><meta name="author" content="Fredo"><meta name="copyright" content="Fredo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="SpringBoot核心特性"><meta name="application-name" content="SpringBoot核心特性"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="SpringBoot核心特性官方文档:  Spring Application: SpringApplicationExternal Configuration: External ConfigurationProfiles: ProfilesLogging: Logging  1.SpringApplicationSpringApplication简化了Spring程序的启动过程.大多数情况下,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBoot Web开发3-内容协商">
-<meta property="og:url" content="http://fu-jw.com/posts/2ba4c64a.html">
+<meta property="og:title" content="SpringBoot核心特性">
+<meta property="og:url" content="http://fu-jw.com/posts/dcf57196.html">
 <meta property="og:site_name" content="Fredo&#39;s Blog">
-<meta property="og:description" content="SpringBoot Web开发3-内容协商3.内容协商1.HTTP内容协商在HTTP协议中,内容协商是一种机制,用于为同一URI提供资源不同的表示形式,以帮助用户代理指定最适合用户的表示形式例如,哪种文档语言,哪种图片格式或者哪种内容编码 内容协商通常有两种方式,服务端驱动型内容协商和代理驱动型内容协商 服务端驱动型内容协商在服务端驱动型内容协商或者主动内容协商中,浏览器（或者其他任何类型的用户">
+<meta property="og:description" content="SpringBoot核心特性官方文档:  Spring Application: SpringApplicationExternal Configuration: External ConfigurationProfiles: ProfilesLogging: Logging  1.SpringApplicationSpringApplication简化了Spring程序的启动过程.大多数情况下,">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://fu-jw.com/img/default_cover6.jpg">
-<meta property="article:published_time" content="2023-07-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-07-06T12:11:18.353Z">
+<meta property="og:image" content="http://fu-jw.com/img/default_cover.jpg">
+<meta property="article:published_time" content="2023-07-02T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-06T12:11:18.357Z">
 <meta property="article:author" content="Fredo">
 <meta property="article:tag" content="SpringBoot">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://fu-jw.com/img/default_cover6.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://fu-jw.com/posts/2ba4c64a"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="http://fu-jw.com/img/default_cover.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://fu-jw.com/posts/dcf57196"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   friends_vue_info: undefined,
   navMusic: true,
@@ -50,7 +50,7 @@
   islazyload: true,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'SpringBoot Web开发3-内容协商',
+  title: 'SpringBoot核心特性',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
@@ -164,159 +164,255 @@
     }
     detectApple()
     })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Fredo's Blog" type="application/atom+xml">
-</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/"><div class="title">Fredo's Blog</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=1708664797&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="rm.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/SpringBoot/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>SpringBoot</span></a></span></div></div><h1 class="post-title">SpringBoot Web开发3-内容协商</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-06T12:11:18.353Z" title="更新于 2023-07-06 12:11:18">2023-07-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1.6k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="SpringBoot Web开发3-内容协商"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover6.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="SpringBoot-Web开发3-内容协商"><a href="#SpringBoot-Web开发3-内容协商" class="headerlink" title="SpringBoot Web开发3-内容协商"></a>SpringBoot Web开发3-内容协商</h1><h2 id="3-内容协商"><a href="#3-内容协商" class="headerlink" title="3.内容协商"></a>3.内容协商</h2><h3 id="1-HTTP内容协商"><a href="#1-HTTP内容协商" class="headerlink" title="1.HTTP内容协商"></a>1.HTTP内容协商</h3><p>在<strong>HTTP</strong>协议中,<strong>内容协商</strong>是一种机制,用于为同一<strong>URI</strong>提供资源不同的表示形式,以帮助用户代理指定最适合用户的表示形式<br>例如,哪种文档语言,哪种图片格式或者哪种内容编码</p>
-<p>内容协商通常有两种方式,服务端驱动型内容协商和代理驱动型内容协商</p>
-<h4 id="服务端驱动型内容协商"><a href="#服务端驱动型内容协商" class="headerlink" title="服务端驱动型内容协商"></a>服务端驱动型内容协商</h4><p>在服务端驱动型内容协商或者主动内容协商中,浏览器（或者其他任何类型的用户代理）会随同 URL 发送一系列的 HTTP 标头.<br>这些标头描述了用户倾向的选择.服务器则以此为线索,通过内部算法来选择最佳方案提供给客户端.如果它不能提供一个合适的资源,<br>它可能使用 406（Not Acceptable）、415（Unsupported Media Type）进行响应并为其支持的媒体类型设置标头.<br>例如，分别对 POST 和 PATCH 请求使用 Accept-Post (en-US) 或 Accept-Patch 标头</p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f8446e65eb.webp" alt="服务端驱动型内容协商"/>
-
-<p>HTTP&#x2F;1.1 规范指定了一系列的标准标头用于启动服务端驱动型内容协商（Accept、Accept-Charset、Accept-Encoding、Accept-Language）</p>
-<table>
-<thead>
-<tr>
-<th>请求头</th>
-<th>请求头说明</th>
-<th>响应头</th>
-<th>响应头说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Accept</td>
-<td>告诉服务端需要的类型</td>
-<td>Content-Type</td>
-<td>告诉客户端响应的媒体类型</td>
-</tr>
-<tr>
-<td>Accept-Language</td>
-<td>告诉服务端需要的语言</td>
-<td>Content-Language</td>
-<td>告诉客户端响应的语言</td>
-</tr>
-<tr>
-<td>Accept-Charset</td>
-<td>告诉服务端需要的字符集</td>
-<td>Content-Charset</td>
-<td>告诉客户端响应的字符集</td>
-</tr>
-<tr>
-<td>Accept-Encoding</td>
-<td>告诉服务端需要的压缩方式</td>
-<td>Content-Encoding</td>
-<td>告诉客户端响应的压缩方式</td>
-</tr>
-</tbody></table>
-<h4 id="代理驱动型内容协商"><a href="#代理驱动型内容协商" class="headerlink" title="代理驱动型内容协商"></a>代理驱动型内容协商</h4><p>从 HTTP 协议制定之初，该协议就准许另外一种协商机制：代理驱动型内容协商，或称为响应式协商。<br>在这种协商机制中，当面临不明确的请求时，服务器会返回一个页面，其中包含了可供选择的资源的链接。<br>资源呈现给用户，由用户做出选择.但是HTTP 标准没有明确指定提供可选资源链接的页面的格式，这阻碍了该过程的无痛自动化。<br>除了退回至服务端驱动型内容协商外，这种自动化方法几乎无一例外都是通过脚本技术来完成的，<br>尤其是 JavaScript 重定向技术：在检测了协商的条件之后，脚本会触发重定向动作。<br>另外一个问题是，为了获得实际的资源，需要额外发送一次请求，减慢了将资源呈现给用户的速度</p>
-<h3 id="2-SpringMVC的内容协商"><a href="#2-SpringMVC的内容协商" class="headerlink" title="2.SpringMVC的内容协商"></a>2.SpringMVC的内容协商</h3><p>SpringMVC实现了HTTP内容协商的同时,又进行了扩展.<br>支持4种内容协商方式：HTTP首部Accept，扩展名，请求参数，或者固定类型</p>
-<h3 id="3-SpringBoot的内容协商"><a href="#3-SpringBoot的内容协商" class="headerlink" title="3.SpringBoot的内容协商"></a>3.SpringBoot的内容协商</h3><p>由于SpringBoot的<code>web场景启动器</code>整合了SpringMVC,因此SpringBoot引入<code>web场景启动器</code>后即可拥有内容协商功能</p>
-<p>SpringBoot有两种方式:基于请求头和基于请求参数的实现</p>
-<ul>
-<li>基于请求头内容协商:(默认开启)<ul>
-<li>客户端向服务端发送请求，携带HTTP标准的<strong>Accept请求头</strong></li>
-<li><strong>Accept</strong>: <code>application/json</code>、<code>text/xml</code>、<code>text/yaml</code></li>
-<li>服务端根据客户端请求头期望的数据类型进行动态返回</li>
-</ul>
-</li>
-<li>基于请求参数内容协商:(需要开启)<ul>
-<li>发送请求: GET &#x2F;person?format&#x3D;json</li>
-<li>匹配到 @GetMapping(“&#x2F;person”)</li>
-<li>根据参数协商,优先返回<strong>json</strong>类型数据,(需要开启参数匹配设置)</li>
-<li>发送请求 GET &#x2F;person?format&#x3D;xml,优先返回<strong>xml</strong>类型数据</li>
-</ul>
-</li>
-</ul>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f841eacfa9.webp"/>
-
-<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a>4.测试</h3><p>默认情况,返回JSON</p>
-<details> 
-<summary><strong><span style="color: red; ">是因为???</span></strong></summary>
-<strong>web场景</strong>依赖
-<strong>spring-boot-starter-json</strong><br/>
-<strong>spring-boot-starter-json</strong>依赖<strong>jackson-databind</strong><br/>
-<strong>jackson-databind</strong>可以将对象转为JSON
-</details>
-
-<p>效果:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f83f97a750.webp"/><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f83db815e5.webp"/></p>
-<p>修改为XML格式:</p>
-<ol>
-<li>引依赖</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.fasterxml.jackson.dataformat<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jackson-dataformat-xml<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>标注解</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@JacksonXmlRootElement</span>  <span class="comment">// 可以写出为xml文档</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="type">long</span> id;</span><br><span class="line">  <span class="keyword">private</span> String name;</span><br><span class="line">  <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果:</p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f83a2b0c4e.webp"/>
-
-<p>参数演示:</p>
-<p>需要开启<strong>基于请求参数</strong>的内容协商</p>
-<p>代码版:</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 内容协商的相关配置</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">configureContentNegotiation</span><span class="params">(ContentNegotiationConfigurer configurer)</span>&#123;</span><br><span class="line">    <span class="comment">// 开启基于请求参数的内容协商功能</span></span><br><span class="line">    configurer.favorParameter(<span class="literal">true</span>);<span class="comment">// 默认:false</span></span><br><span class="line">    <span class="comment">// 自定义内容协商时使用的参数名</span></span><br><span class="line">    configurer.parameterName(<span class="string">&quot;type&quot;</span>);<span class="comment">// 默认:format</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>配置文件版:</p>
-<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启基于请求参数的内容协商功能。 默认参数名：format。 默认此功能不开启</span></span><br><span class="line"><span class="attr">spring.mvc.contentnegotiation.favor-parameter</span>=<span class="string">true</span></span><br><span class="line"><span class="comment"># 指定内容协商时使用的参数名。默认是 format</span></span><br><span class="line"><span class="attr">spring.mvc.contentnegotiation.parameter-name</span>=<span class="string">type</span></span><br></pre></td></tr></table></figure>
-
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f8378aac51.webp"/>
-
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f835b383d5.webp"/>
-
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f8333bc364.webp"/>
-
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f83010fe7d.webp"/>
-
-<h3 id="5-内容协商原理浅析"><a href="#5-内容协商原理浅析" class="headerlink" title="5.内容协商原理浅析"></a>5.内容协商原理浅析</h3><blockquote>
-<p>其实就是</p>
-<ul>
-<li>HttpMessageConverter 怎么工作？合适工作？</li>
-<li>定制 HttpMessageConverter 来实现多端内容协商</li>
-<li>编写WebMvcConfigurer提供的configureMessageConverters底层，修改底层的MessageConverter</li>
-</ul>
-</blockquote>
-<h4 id="1-ResponseBody由HttpMessageConverter处理"><a href="#1-ResponseBody由HttpMessageConverter处理" class="headerlink" title="1.@ResponseBody由HttpMessageConverter处理"></a>1.<code>@ResponseBody</code>由<strong>HttpMessageConverter</strong>处理</h4><blockquote>
-<p>标注了<code>@ResponseBody</code>的返回值 将会由支持它的<strong>HttpMessageConverter</strong>写给浏览器</p>
-</blockquote>
-<ul>
-<li><p>如果<strong>controller</strong>方法的返回值标注了<code>@ResponseBody</code>注解</p>
-<ul>
-<li>请求进来先来到<strong>DispatcherServlet</strong>的<code>doDispatch()</code>进行处理</li>
-<li>找到一个<strong>HandlerAdapter</strong>适配器。利用适配器执行目标方法</li>
-<li><code>RequestMappingHandlerAdapter</code>来执行，调用<code>invokeHandlerMethod()</code>来执行目标方法</li>
-<li>目标方法执行之前，准备好两个东西<ul>
-<li>HandlerMethodArgumentResolver：参数解析器，确定目标方法每个参数值</li>
-<li>HandlerMethodReturnValueHandler：返回值处理器，确定目标方法的返回值改怎么处理</li>
-</ul>
-</li>
-<li><code>RequestMappingHandlerAdapter</code>里面的<code>invokeAndHandle()</code>真正执行目标方法</li>
-<li>目标方法执行完成，会返回<strong>返回值对象</strong></li>
-<li>找到一个合适的返回值处理器<code>HandlerMethodReturnValueHandler</code></li>
-<li>最终找到<code>RequestResponseBodyMethodProcessor</code>能处理 标注了<code>@ResponseBody</code>注解的方法</li>
-<li><code>RequestResponseBodyMethodProcessor</code>调用<code>writeWithMessageConverters</code>,利用<code>MessageConverter</code>把返回值写出去</li>
-</ul>
-</li>
-<li><p><code>HttpMessageConverter</code>会先进行内容协商</p>
-<ul>
-<li>遍历所有的<code>MessageConverter</code>看谁支持这种内容类型的数据</li>
-<li>默认<code>MessageConverter</code>有以下:</li>
-<li><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/01/649f825276881.webp"/></li>
-<li>最终因为要<code>json</code>所以<code>MappingJackson2HttpMessageConverter</code>支持写出json</li>
-<li>jackson用<code>ObjectMapper</code>把对象写出去</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-WebMvcAutoConfiguration提供几种默认HttpMessageConverters"><a href="#2-WebMvcAutoConfiguration提供几种默认HttpMessageConverters" class="headerlink" title="2.WebMvcAutoConfiguration提供几种默认HttpMessageConverters"></a>2.WebMvcAutoConfiguration提供几种默认HttpMessageConverters</h4><p><code>EnableWebMvcConfiguration</code>通过<code>addDefaultHttpMessageConverters</code>添加了默认的<code>MessageConverter</code>;<br>如下:</p>
-<ul>
-<li><code>ByteArrayHttpMessageConverter</code>： 支持字节数据读写</li>
-<li><code>StringHttpMessageConverter</code>: 支持字符串读写</li>
-<li><code>ResourceHttpMessageConverter</code>: 支持资源读写</li>
-<li><code>ResourceRegionHttpMessageConverter</code>: 支持分区资源写出</li>
-<li><code>AllEncompassingFormHttpMessageConverter</code>: 支持表单xml&#x2F;json读写</li>
-<li><code>MappingJackson2HttpMessageConverter</code>: 支持请求响应体Json读写</li>
-</ul>
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/"><div class="title">Fredo's Blog</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=1708664797&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="rm.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/SpringBoot/"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>SpringBoot</span></a></span></div></div><h1 class="post-title">SpringBoot核心特性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-02T00:00:00.000Z" title="发表于 2023-07-02 00:00:00">2023-07-02</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-06T12:11:18.357Z" title="更新于 2023-07-06 12:11:18">2023-07-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">3.5k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="SpringBoot核心特性"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="SpringBoot核心特性"><a href="#SpringBoot核心特性" class="headerlink" title="SpringBoot核心特性"></a>SpringBoot核心特性</h1><p><a target="_blank" rel="noopener" href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html">官方文档:</a></p>
 <blockquote>
-<p>系统提供默认的MessageConverter 功能有限，仅用于json或者普通返回数据。<br>额外增加新的内容协商功能，必须增加新的HttpMessageConverter</p>
+<p>Spring Application: SpringApplication<br>External Configuration: External Configuration<br>Profiles: Profiles<br>Logging: Logging</p>
 </blockquote>
-</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://fu-jw.com"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=SpringBoot Web开发3-内容协商&amp;url=https://fu-jw.com&amp;pic=/img/default_cover6.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/SpringBoot/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>SpringBoot<span class="tagsPageCount">13</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://fu-jw.com">原创</a><a class="post-copyright-title"><span>SpringBoot Web开发3-内容协商</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://fu-jw.com">Fredo</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://fu-jw.com">https://fu-jw.com</a></span><span class="copy-button" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">此文章版权归作者所有，如有转载，请注明来自原作者</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/3965340.html"><img class="prev-cover" src="/img/default_cover3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">SpringBoot Web开发4-模板引擎</div></div></a></div><div class="next-post pull-right"><a href="/posts/10ba68de.html"><img class="next-cover" src="/img/default_cover6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SpringBoot Web开发2-路径匹配</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/c3b98719.html" title="Java日志体系"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-12</div><div class="title">Java日志体系</div></div></a></div><div><a href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析"><img class="cover" src="/img/default_cover3.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发1-自动配置原理浅析</div></div></a></div><div><a href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配"><img class="cover" src="/img/default_cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发2-路径匹配</div></div></a></div><div><a href="/posts/3965340.html" title="SpringBoot Web开发4-模板引擎"><img class="cover" src="/img/default_cover3.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发4-模板引擎</div></div></a></div><div><a href="/posts/41ac7873.html" title="SpringBoot Web开发5-错误处理"><img class="cover" src="/img/default_cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发5-错误处理</div></div></a></div><div><a href="/posts/128d12a9.html" title="SpringBoot Web开发6-嵌入式容器"><img class="cover" src="/img/default_cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发6-嵌入式容器</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a></div><div class="comment-tips" id="comment-tips"><span>你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div><div class="comment-barrage"></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">Fredo</h1><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/fu-jw" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="mailto:1151242757@qq.com" target="_blank" title="Email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="social-icon faa-parent animated-hover" href="/atom.xml" target="_blank" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot-Web%E5%BC%80%E5%8F%913-%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot Web开发3-内容协商</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.</span> <span class="toc-text">3.内容协商</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-HTTP%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.HTTP内容协商</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%A9%B1%E5%8A%A8%E5%9E%8B%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">服务端驱动型内容协商</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E9%A9%B1%E5%8A%A8%E5%9E%8B%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">代理驱动型内容协商</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-SpringMVC%E7%9A%84%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.SpringMVC的内容协商</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-SpringBoot%E7%9A%84%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.SpringBoot的内容协商</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B5%8B%E8%AF%95"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%86%85%E5%AE%B9%E5%8D%8F%E5%95%86%E5%8E%9F%E7%90%86%E6%B5%85%E6%9E%90"><span class="toc-number">1.1.5.</span> <span class="toc-text">5.内容协商原理浅析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-ResponseBody%E7%94%B1HttpMessageConverter%E5%A4%84%E7%90%86"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">1.@ResponseBody由HttpMessageConverter处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-WebMvcAutoConfiguration%E6%8F%90%E4%BE%9B%E5%87%A0%E7%A7%8D%E9%BB%98%E8%AE%A4HttpMessageConverters"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">2.WebMvcAutoConfiguration提供几种默认HttpMessageConverters</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/6d37548c.html" title="SpringBoot单元测试"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot单元测试"/></a><div class="content"><a class="title" href="/posts/6d37548c.html" title="SpringBoot单元测试">SpringBoot单元测试</a><time datetime="2023-07-02T00:00:00.000Z" title="发表于 2023-07-02 00:00:00">2023-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/dcf57196.html" title="SpringBoot核心特性"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot核心特性"/></a><div class="content"><a class="title" href="/posts/dcf57196.html" title="SpringBoot核心特性">SpringBoot核心特性</a><time datetime="2023-07-02T00:00:00.000Z" title="发表于 2023-07-02 00:00:00">2023-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发1-自动配置原理浅析"/></a><div class="content"><a class="title" href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析">SpringBoot Web开发1-自动配置原理浅析</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发2-路径匹配"/></a><div class="content"><a class="title" href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配">SpringBoot Web开发2-路径匹配</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2ba4c64a.html" title="SpringBoot Web开发3-内容协商"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发3-内容协商"/></a><div class="content"><a class="title" href="/posts/2ba4c64a.html" title="SpringBoot Web开发3-内容协商">SpringBoot Web开发3-内容协商</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Fredo</div><div id="workboard"><img class="workSituationImg boardsign" src="/img/svg/work.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title="博客框架为Hexo"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo"/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" style="margin-inline:5px" data-title="本站已备案" title="本站已备案"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/svg/beian.svg" alt="本站已备案"/></a><a class="github-badge" target="_blank" href="https://github.com/fu-jw" style="margin-inline:5px" data-title="本站由Github托管" title="本站由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站由Github托管"/></a></p></div></footer></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/avatar.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+<h2 id="1-SpringApplication"><a href="#1-SpringApplication" class="headerlink" title="1.SpringApplication"></a>1.SpringApplication</h2><p><code>SpringApplication</code>简化了Spring程序的启动过程.<br>大多数情况下, 可以委托给静态<code>SpringApplication.run</code>方法, 如以下示例所示:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        SpringApplication.run(Main.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>启动日志:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">  .   ____          _            __ _ _</span><br><span class="line"> /\\ / ___&#x27;_ __ _ _(_)_ __  __ _ \ \ \ \</span><br><span class="line">( ( )\___ | &#x27;_ | &#x27;_| | &#x27;_ \/ _` | \ \ \ \</span><br><span class="line"> \\/  ___)| |_)| | | | | || (_| |  ) ) ) )</span><br><span class="line">  &#x27;  |____| .__|_| |_|_| |_\__, | / / / /</span><br><span class="line"> =========|_|==============|___/=/_/_/_/</span><br><span class="line"> :: Spring Boot ::                (v3.1.0)</span><br><span class="line"></span><br><span class="line">2023-07-05T14:07:10.668+08:00  INFO 9584 --- [           main] com.fredo.Main                           : Starting Main using Java 17.0.2 with PID 9584 (D:\Develop\Projects\ideaProject\spring-tutorial\spring-boot\demo05-features\target\classes started by Administrator in D:\Develop\Projects\ideaProject\spring-tutorial)</span><br><span class="line">2023-07-05T14:07:10.673+08:00  INFO 9584 --- [           main] com.fredo.Main                           : No active profile set, falling back to 1 default profile: &quot;default&quot;</span><br><span class="line">2023-07-05T14:07:12.122+08:00  INFO 9584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)</span><br><span class="line">2023-07-05T14:07:12.123+08:00  INFO 9584 --- [           main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.34] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]</span><br><span class="line">2023-07-05T14:07:12.123+08:00  INFO 9584 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.34] using APR version [1.7.0].</span><br><span class="line">2023-07-05T14:07:12.140+08:00  INFO 9584 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]</span><br><span class="line">2023-07-05T14:07:12.159+08:00  INFO 9584 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]</span><br><span class="line">2023-07-05T14:07:12.159+08:00  INFO 9584 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]</span><br><span class="line">2023-07-05T14:07:12.356+08:00  INFO 9584 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext</span><br><span class="line">2023-07-05T14:07:12.360+08:00  INFO 9584 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms</span><br><span class="line">2023-07-05T14:07:13.208+08:00  INFO 9584 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path &#x27;&#x27;</span><br><span class="line">2023-07-05T14:07:13.219+08:00  INFO 9584 --- [           main] com.fredo.Main                           : Started Main in 3.223 seconds (process running for 4.118)</span><br></pre></td></tr></table></figure>
+
+<p>注意: 只有前两行和最后一行是SpringBoot的<strong>启动日志</strong><br>启动日志可以关闭:</p>
+<ul>
+<li>配置文件</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.main.log-startup-info</span>=<span class="string">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>代码:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">SpringApplication application=<span class="keyword">new</span> <span class="title class_">SpringApplication</span>(Main.class);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 关闭启动日志(注意:配置文件的优先级大于代码优先级!!!)</span></span><br><span class="line">        application.setLogStartupInfo(<span class="literal">false</span>);</span><br><span class="line">        application.run(args);</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-启动失败"><a href="#1-启动失败" class="headerlink" title="1.启动失败"></a>1.启动失败</h3><p>如果应用程序无法启动, 已注册的<code>FailureAnalyzers</code>将有机会提供专用的错误消息和解决问题的具体操作<br>以端口占用为例:</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">***************************</span><br><span class="line">APPLICATION FAILED TO START</span><br><span class="line">***************************</span><br><span class="line"></span><br><span class="line">Description:</span><br><span class="line"></span><br><span class="line">Embedded servlet container failed to start. Port 8080 was already in use.</span><br><span class="line"></span><br><span class="line">Action:</span><br><span class="line"></span><br><span class="line">Identify and stop the process that is listening on port 8080 or configure this application to listen on another port.</span><br></pre></td></tr></table></figure>
+
+<p><code>FailureAnalyzers</code>是一个用于分析应用程序失败原因的工具.当应用程序发生失败时,<code>FailureAnalyzers</code>会收集失败信息,<br>并分析失败原因,以便开发人员能够更好地理解应用程序的健康状况.</p>
+<p>可自定义:</p>
+<ul>
+<li>1.自定义类继承<code>AbstractFailureAnalyzer</code>,并重写<code>analyze</code>方法.可参考:<code>BindValidationFailureAnalyzer</code></li>
+<li>2.注册在META-INF&#x2F;spring.factories 文件中</li>
+</ul>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">org.springframework.boot.diagnostics.FailureAnalyzer=\</span><br><span class="line">com.fredo.custom.MyFailureAnalyzer</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-延迟初始化"><a href="#2-延迟初始化" class="headerlink" title="2.延迟初始化"></a>2.延迟初始化</h3><p>在容器启动时不初始化Bean,只有在第一次使用时再初始化</p>
+<p>配置方法:</p>
+<ul>
+<li>配置文件</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.main.lazy-initialization</span>=<span class="string">true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>代码:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开启延迟初始化(默认关闭,不建议开启)</span></span><br><span class="line">application.setLazyInitialization(<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+
+<p>可以使用注解<code>@Lazy(false)</code>, 单独指定某些Bean延迟初始化</p>
+<h3 id="3-自定义Banner"><a href="#3-自定义Banner" class="headerlink" title="3.自定义Banner"></a>3.自定义Banner</h3><p>Banner 就是程序启动时最上面的信息</p>
+<p>类路径添加文件:<strong>banner.txt</strong>或设置<code>spring.banner.location</code>就可以定制 Banner<br><a target="_blank" rel="noopener" href="https://www.bootschool.net/ascii">推荐网址</a></p>
+<p>关闭</p>
+<ul>
+<li>配置文件</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.main.banner-mode</span>=<span class="string">off</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>代码:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 关闭Banner,默认值:CONSOLE</span></span><br><span class="line">application.setBannerMode(Banner.Mode.OFF);</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-自定义SpringApplication"><a href="#4-自定义SpringApplication" class="headerlink" title="4.自定义SpringApplication"></a>4.自定义SpringApplication</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[]args)</span>&#123;</span><br><span class="line">  SpringApplication application=<span class="keyword">new</span> <span class="title class_">SpringApplication</span>(Main.class);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭启动日志(注意:配置文件的优先级大于代码优先级!!!)</span></span><br><span class="line">  application.setLogStartupInfo(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 开启延迟初始化(默认关闭,不建议开启)</span></span><br><span class="line">  application.setLazyInitialization(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭Banner,默认值:CONSOLE</span></span><br><span class="line"><span class="comment">//        application.setBannerMode(Banner.Mode.OFF);</span></span><br><span class="line"></span><br><span class="line">  application.run(args);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>自定义信息在<code>application.properties</code>中,<br>具体可<a target="_blank" rel="noopener" href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config">参考官网</a></p>
+<h3 id="5-流式构造API"><a href="#5-流式构造API" class="headerlink" title="5.流式构造API"></a>5.流式构造API</h3><p>可用于构建父子层次结构</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[]args)</span>&#123;</span><br><span class="line">  <span class="keyword">new</span> <span class="title class_">SpringApplicationBuilder</span>()</span><br><span class="line">  .sources(Main.class) <span class="comment">// 父</span></span><br><span class="line">  .child(Main.class) <span class="comment">// 子,非必须</span></span><br><span class="line">  .bannerMode(Banner.Mode.OFF)</span><br><span class="line">  .run(args);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-配置文件隔离"><a href="#2-配置文件隔离" class="headerlink" title="2.配置文件隔离"></a>2.配置文件隔离</h2><blockquote>
+<p>环境隔离: 快速切换开发、测试、生产环境<br>步骤：</p>
+<ol>
+<li>标识环境：指定哪些组件、配置在哪个环境生效</li>
+<li>切换环境：这个环境对应的所有组件和配置就应该生效</li>
+</ol>
+</blockquote>
+<h3 id="1-指定环境"><a href="#1-指定环境" class="headerlink" title="1.指定环境"></a>1.指定环境</h3><p>Spring Profiles 提供一种隔离配置的方式, 使其仅在特定环境生效<br>任何组件都可用<code>@Profile</code>标记, 来指定何时被加载</p>
+<p>例如:</p>
+<ul>
+<li>dev环境: @Profile({“dev”})</li>
+<li>dev和prod环境: @Profile({“dev”, “prod”})</li>
+</ul>
+<h3 id="2-激活环境"><a href="#2-激活环境" class="headerlink" title="2.激活环境"></a>2.激活环境</h3><p>配置文件激活</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.profiles.active</span>=<span class="string">prod</span></span><br></pre></td></tr></table></figure>
+<p>命令行激活</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">java -jar xxx.jar --spring.profiles.active=prod</span><br></pre></td></tr></table></figure>
+
+<p>注意:</p>
+<ul>
+<li>不标注<code>@Profile</code>的组件无论是在哪个环境中都会激活</li>
+<li>存在默认环境<code>@Profile(&#123;&quot;default&quot;&#125;)</code>,需要激活默认环境才有效</li>
+<li>也可以设置默认激活的环境, <code>spring.profiles.default=dev</code></li>
+<li>推荐使用激活方式激活指定环境</li>
+</ul>
+<h3 id="3-环境包含"><a href="#3-环境包含" class="headerlink" title="3.环境包含"></a>3.环境包含</h3><p>在配置文件(必须是在主配置文件中)中设置:</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.profiles.include[0]</span>=<span class="string">dev</span></span><br><span class="line"><span class="attr">spring.profiles.include[1]</span>=<span class="string">test</span></span><br><span class="line"><span class="attr">或者</span>:<span class="string"></span></span><br><span class="line"><span class="attr">spring.profiles.include</span>=<span class="string">dev,test</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-最佳实践"><a href="#4-最佳实践" class="headerlink" title="4.最佳实践"></a>4.最佳实践</h4><p><strong>生效的环境 &#x3D; 激活的环境&#x2F;默认环境 + 包含的环境</strong></p>
+<p>项<a href="src/main/java/com/fredo">fredo</a>目中:</p>
+<ul>
+<li>基础的配置<code>mybatis</code>,<code>log</code>,…：写到<strong>包含环境</strong>中</li>
+<li>要动态切换变化的<code>db</code>, <code>redis</code>,…：写到<strong>激活的环境</strong>中</li>
+</ul>
+<h4 id="5-Profile-分组"><a href="#5-Profile-分组" class="headerlink" title="5.Profile 分组"></a>5.Profile 分组</h4><p>创建prod组，指定包含db和mq配置</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.profiles.group.prod[0]</span>=<span class="string">db</span></span><br><span class="line"><span class="attr">spring.profiles.group.prod[1]</span>=<span class="string">mq</span></span><br></pre></td></tr></table></figure>
+<p>使用<code>--spring.profiles.active=prod</code>, 就会激活prod, 就会使用db, mq配置文件</p>
+<h4 id="6-Profile-配置文件"><a href="#6-Profile-配置文件" class="headerlink" title="6.Profile 配置文件"></a>6.Profile 配置文件</h4><ul>
+<li><code>application-&#123;profile&#125;.properties</code>可以作为指定环境的配置文件</li>
+<li>激活这个环境，配置就会生效。最终生效的所有配置是<ul>
+<li><code>application.properties</code>：主配置文件，任意时候都生效</li>
+<li><code>application-&#123;profile&#125;.properties</code>：指定环境配置文件，激活指定环境生效</li>
+</ul>
+</li>
+</ul>
+<p>profile优先级 &gt; application</p>
+<h2 id="3-外置配置文件"><a href="#3-外置配置文件" class="headerlink" title="3.外置配置文件"></a>3.外置配置文件</h2><blockquote>
+<p>场景：线上应用如何快速修改配置，并应用最新配置？</p>
+<ul>
+<li>SpringBoot 使用  <strong>配置优先级</strong> + <strong>外部配置</strong>  简化配置更新、简化运维。</li>
+<li>只需要给jar应用所在的文件夹放一个<code>application.properties</code>最新配置文件，重启项目就能自动应用最新配置</li>
+</ul>
+</blockquote>
+<p>SpringBoot允许将配置外部化, 以便可以在不同的环境中使用相同的应用程序代码.<br>我们可以使用各种<strong>外部配置源</strong>, 包括<strong>Java Properties文件</strong>、<strong>YAML文件</strong>、<strong>环境变量</strong>和<strong>命令行参数</strong>。</p>
+<p><code>@Value</code>可以获取值, 也可以用<code>@ConfigurationProperties</code>将所有属性<strong>绑定</strong>到java object中</p>
+<h3 id="1-配置优先级"><a href="#1-配置优先级" class="headerlink" title="1.配置优先级"></a>1.配置优先级</h3><p>以下是SpringBoot属性源加载顺序。<strong>由低到高，高优先级配置覆盖低优先级</strong></p>
+<ol>
+<li><strong>默认属性</strong>（通过<code>SpringApplication.setDefaultProperties</code>指定的）</li>
+<li><code>@PropertySource</code>指定加载的配置（需要写在<code>@Configuration</code>类上才可生效）</li>
+<li>配置文件（application.properties&#x2F;yml等）</li>
+<li><code>RandomValuePropertySource</code>支持的<code>random.*</code>配置（如：<code>@Value(&quot;$&#123;random.int&#125;&quot;)</code>）</li>
+<li>OS 环境变量</li>
+<li>Java 系统属性（System.getProperties()）</li>
+<li>JNDI 属性（来自java:comp&#x2F;env）</li>
+<li>ServletContext 初始化参数</li>
+<li>ServletConfig 初始化参数</li>
+<li>SPRING_APPLICATION_JSON属性（内置在环境变量或系统属性中的 JSON）</li>
+<li><strong>命令行参数</strong></li>
+<li>测试属性。(@SpringBootTest进行测试时指定的属性)</li>
+<li>测试类@TestPropertySource注解</li>
+<li>Devtools 设置的全局属性。($HOME&#x2F;.config&#x2F;spring-boot)</li>
+</ol>
+<p>小结一下:<br>常见的优先级顺序：<br>命令行&gt; 配置文件&gt; springapplication配置</p>
+<p><strong>配置文件优先级如下</strong>：(后面覆盖前面)</p>
+<ol>
+<li>jar 包内的application.properties&#x2F;yml</li>
+<li>jar 包内的application-{profile}.properties&#x2F;yml</li>
+<li>jar 包外的application.properties&#x2F;yml</li>
+<li>jar 包外的application-{profile}.properties&#x2F;yml</li>
+</ol>
+<blockquote>
+<p>建议：用一种格式的配置文件。如果.properties和.yml同时存在,则.properties优先</p>
+</blockquote>
+<p>小结一下:</p>
+<ul>
+<li>包外 &gt; 包内</li>
+<li>同级情况：profile配置 &gt; application配置</li>
+</ul>
+<p>所有参数均可由命令行传入，使用<code>--参数项=参数值</code>，将会被添加到环境变量中，并优先于配置文件<br>比如<code>java -jar app.jar --name=&quot;Spring&quot;</code>,可以使用<code>@Value(&quot;$&#123;name&#125;&quot;)</code>获取</p>
+<p>演示场景：</p>
+<ul>
+<li>包内： application.properties   server.port&#x3D;8000</li>
+<li>包内： application-dev.properties    server.port&#x3D;9000</li>
+<li>包外：  application.properties   server.port&#x3D;8001</li>
+<li>包外： application-dev.properties    server.port&#x3D;9001</li>
+</ul>
+<p>启动端口: 命令行 &gt; 9001 &gt; 8001 &gt; 9000 &gt; 8000</p>
+<h3 id="2-外部配置"><a href="#2-外部配置" class="headerlink" title="2.外部配置"></a>2.外部配置</h3><p>SpringBoot 应用启动时会自动寻找<strong>application.properties</strong>和<strong>application.yaml</strong>位置进行加载.<br>顺序如下：（后面覆盖前面）</p>
+<ul>
+<li>类路径: 内部<ul>
+<li>类根路径</li>
+<li>类下<code>/config</code>包</li>
+</ul>
+</li>
+<li>当前路径（项目所在的位置）<ul>
+<li>当前路径</li>
+<li>当前下<code>/config</code>子目录</li>
+<li><code>/config</code>目录的直接子目录</li>
+</ul>
+</li>
+</ul>
+<p>最终效果：优先级由高到低，前面覆盖后面</p>
+<ul>
+<li>命令行 &gt; 包外config直接子目录 &gt; 包外config目录 &gt; 包外根目录 &gt; 包内目录</li>
+<li>同级比较：<ul>
+<li>profile配置 &gt; 默认配置</li>
+<li>properties配置 &gt; yaml配置</li>
+</ul>
+</li>
+</ul>
+<img alt="配置优先级" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://image.fu-jw.com/img/2023/07/06/64a67fc67db26.png"/>
+
+<p>规律：最外层的最优先</p>
+<ul>
+<li>命令行 &gt; 所有</li>
+<li>包外 &gt; 包内</li>
+<li>config目录 &gt; 根目录</li>
+<li>profile &gt; application</li>
+</ul>
+<p>配置不同就都生效（互补），配置相同高优先级覆盖低优先级</p>
+<h3 id="3-导入配置"><a href="#3-导入配置" class="headerlink" title="3.导入配置"></a>3.导入配置</h3><p>使用<code>spring.config.import</code>可以导入额外配置</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring.config.import</span>=<span class="string">my.properties</span></span><br><span class="line"><span class="attr">my.property</span>=<span class="string">value</span></span><br></pre></td></tr></table></figure>
+<p>无论以上写法的先后顺序, <strong>my.properties</strong>的值总是优先于直接在文件中编写的<strong>my.property</strong></p>
+<h3 id="4-属性占位符"><a href="#4-属性占位符" class="headerlink" title="4.属性占位符"></a>4.属性占位符</h3><p>配置文件中可以使用<code>$&#123;name:default&#125;</code>形式取出之前配置过的值</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">app.name</span>=<span class="string">MyApp</span></span><br><span class="line"><span class="attr">app.description</span>=<span class="string">$&#123;app.name&#125; is a Spring Boot application written by $&#123;username:Unknown&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-日志"><a href="#4-日志" class="headerlink" title="4.日志"></a>4.日志</h2><p>详细可参考<a target="_blank" rel="noopener" href="https://blog.fu-jw.com/posts/4275e528.html">SpringBoot日志</a></p>
+<h2 id="5-单元测试-JUnit5"><a href="#5-单元测试-JUnit5" class="headerlink" title="5.单元测试-JUnit5"></a>5.单元测试-JUnit5</h2><p>详细可参考<a target="_blank" rel="noopener" href="http://localhost:4000/posts/6d37548c.html">SpringBoot单元测试</a></p>
+<h2 id="6-SpringBoot启动原理"><a href="#6-SpringBoot启动原理" class="headerlink" title="6.SpringBoot启动原理"></a>6.SpringBoot启动原理</h2><blockquote>
+<p>下面内容由GPT-4生成</p>
+</blockquote>
+<p>SpringBoot 是一个用于简化 Spring 应用开发的框架。它的启动原理可以分为以下几个关键步骤：</p>
+<ol>
+<li><p><strong>创建 SpringApplication 对象</strong>：接下来，Spring Boot 创建一个 <code>SpringApplication</code> 对象，该对象负责管理 Spring 应用的启动和运行。在创建时，它会检测应用中的特定类，例如 <code>@SpringBootApplication</code> 注解标注的类。</p>
+</li>
+<li><p><strong>加载配置文件</strong>：Spring Boot 首先加载应用的配置文件（如 <code>application.properties</code> 或 <code>application.yml</code>），以读取相关配置。</p>
+</li>
+<li><p><strong>设置 SpringApplication 对象属性</strong>：<code>SpringApplication</code> 对象会根据加载的配置文件和应用上下文设置相应的属性。例如，它可能会设置应用的环境、激活的配置文件和日志配置等。</p>
+</li>
+<li><p><strong>运行 SpringApplication 对象</strong>：通过调用 <code>SpringApplication.run()</code> 方法启动 Spring Boot 应用。这个方法会启动内嵌的 Servlet 容器（如 Tomcat）、初始化 Spring 应用上下文，并注册所有需要的 Bean。</p>
+</li>
+<li><p><strong>自动配置</strong>：Spring Boot 根据应用的依赖库和配置文件自动配置 Spring 应用。自动配置是 Spring Boot 的一个核心特性，它通过扫描类路径和应用中的特定注解（如 <code>@Configuration</code> 和 <code>@Component</code>）来自动创建和注册 Bean。这大大简化了 Spring 应用的配置过程。</p>
+</li>
+<li><p><strong>启动应用</strong>：最后，Spring Boot 启动应用，并根据配置文件中的设置监听特定端口，提供 Web 服务。</p>
+</li>
+</ol>
+<p>总之，SpringBoot 的启动原理主要包括加载配置文件、创建和设置 SpringApplication 对象、运行 SpringApplication 对象、自动配置和启动应用等步骤。这一切都旨在简化 Spring 应用的开发和部署，让开发者能够快速构建和运行应用。</p>
+<blockquote>
+<p>下面内容由CHAT-GLM生成</p>
+</blockquote>
+<p><strong>SpringBoot 的启动原理</strong></p>
+<p>SpringBoot 是一种基于 Spring 框架的快速开发工具，它简化了开发过程，提供了一种简便的方式来构建独立的、基于 Spring 的生产级应用程序。要理解 SpringBoot 的启动原理，我们需要探讨 SpringBoot 的主要组件和过程。</p>
+<ol>
+<li><strong>依赖管理</strong></li>
+</ol>
+<p>SpringBoot 使用了一种称为 “Starter” 的依赖管理方式，它将常用的依赖打包在一起，使得开发人员只需引入一个 Starter，即可自动添加并管理相关的依赖。这大大简化了项目的依赖管理，提高了开发效率。</p>
+<ol start="2">
+<li><strong>自动配置</strong></li>
+</ol>
+<p>SpringBoot 的一个重要特性是 “约定优于配置”，它通过自动配置来减少开发人员的配置工作。在启动过程中，SpringBoot 会扫描类路径，检查已添加的 Starter 和依赖，并根据这些信息自动配置 Bean 和应用程序上下文。这样，开发人员只需关注自己的业务逻辑，而无需关注底层的配置细节。</p>
+<ol start="3">
+<li><strong>启动过程</strong></li>
+</ol>
+<p>以下是 SpringBoot 启动过程的主要步骤：</p>
+<p>a. <strong>初始化 SpringApplication 对象</strong>：SpringBoot 首先创建一个 SpringApplication 对象，该对象用于保存应用程序的上下文和配置信息。</p>
+<p>b. <strong>运行 SpringApplication 对象</strong>：接下来，SpringBoot 会调用 SpringApplication 对象的 <code>run()</code> 方法，该方法会启动整个应用程序。</p>
+<p>c. <strong>加载应用程序上下文</strong>：在 <code>run()</code> 方法中，SpringBoot 会加载应用程序的上下文，包括 Bean 定义、自动配置等信息。</p>
+<p>d. <strong>启动嵌入式容器</strong>：如果应用程序是一个 Web 项目，SpringBoot 会启动一个嵌入式的 Web 容器（如 Tomcat、Jetty 或 Undertow），并将应用程序部署到该容器中。</p>
+<p>e. <strong>执行应用程序</strong>：最后，SpringBoot 会执行应用程序的主类 <code>main()</code> 方法，从而启动整个应用程序。</p>
+<ol start="4">
+<li><strong>外部化配置</strong></li>
+</ol>
+<p>SpringBoot 支持外部化配置，使得开发人员可以在不修改代码的情况下，通过修改配置文件或环境变量来调整应用程序的行为。这大大提高了应用程序的灵活性和可维护性。</p>
+<p>总之，SpringBoot 的启动原理主要包括依赖管理、自动配置、启动过程和外部化配置等方面。通过这些特性和过程，SpringBoot 实现了快速开发、简化配置和高度灵活性，使得开发人员可以更专注于业务逻辑的开发。</p>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://fu-jw.com"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=SpringBoot核心特性&amp;url=https://fu-jw.com&amp;pic=/img/default_cover.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/SpringBoot/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>SpringBoot<span class="tagsPageCount">13</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://fu-jw.com">原创</a><a class="post-copyright-title"><span>SpringBoot核心特性</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://fu-jw.com">Fredo</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://fu-jw.com">https://fu-jw.com</a></span><span class="copy-button" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">此文章版权归作者所有，如有转载，请注明来自原作者</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/d5a9e6d8.html"><img class="prev-cover" src="/img/default_cover3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">SpringBoot Web开发1-自动配置原理浅析</div></div></a></div><div class="next-post pull-right"><a href="/posts/6d37548c.html"><img class="next-cover" src="/img/default_cover4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SpringBoot单元测试</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/c3b98719.html" title="Java日志体系"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-12</div><div class="title">Java日志体系</div></div></a></div><div><a href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析"><img class="cover" src="/img/default_cover3.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发1-自动配置原理浅析</div></div></a></div><div><a href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配"><img class="cover" src="/img/default_cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发2-路径匹配</div></div></a></div><div><a href="/posts/2ba4c64a.html" title="SpringBoot Web开发3-内容协商"><img class="cover" src="/img/default_cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发3-内容协商</div></div></a></div><div><a href="/posts/3965340.html" title="SpringBoot Web开发4-模板引擎"><img class="cover" src="/img/default_cover3.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发4-模板引擎</div></div></a></div><div><a href="/posts/41ac7873.html" title="SpringBoot Web开发5-错误处理"><img class="cover" src="/img/default_cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-01</div><div class="title">SpringBoot Web开发5-错误处理</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a></div><div class="comment-tips" id="comment-tips"><span>你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div><div class="comment-barrage"></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">Fredo</h1><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/fu-jw" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="mailto:1151242757@qq.com" target="_blank" title="Email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="social-icon faa-parent animated-hover" href="/atom.xml" target="_blank" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot核心特性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-SpringApplication"><span class="toc-number">1.1.</span> <span class="toc-text">1.SpringApplication</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.启动失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%BB%B6%E8%BF%9F%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.延迟初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89Banner"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.自定义Banner</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%87%AA%E5%AE%9A%E4%B9%89SpringApplication"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.自定义SpringApplication</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%B5%81%E5%BC%8F%E6%9E%84%E9%80%A0API"><span class="toc-number">1.1.5.</span> <span class="toc-text">5.流式构造API</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%9A%94%E7%A6%BB"><span class="toc-number">1.2.</span> <span class="toc-text">2.配置文件隔离</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8C%87%E5%AE%9A%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.指定环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%BF%80%E6%B4%BB%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.激活环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%8E%AF%E5%A2%83%E5%8C%85%E5%90%AB"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.环境包含</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">4.最佳实践</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-Profile-%E5%88%86%E7%BB%84"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">5.Profile 分组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Profile-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.3.3.</span> <span class="toc-text">6.Profile 配置文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A4%96%E7%BD%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">3.外置配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%85%8D%E7%BD%AE%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.配置优先级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%96%E9%83%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.外部配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%BC%E5%85%A5%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.导入配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%B1%9E%E6%80%A7%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.属性占位符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%97%A5%E5%BF%97"><span class="toc-number">1.4.</span> <span class="toc-text">4.日志</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95-JUnit5"><span class="toc-number">1.5.</span> <span class="toc-text">5.单元测试-JUnit5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-SpringBoot%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86"><span class="toc-number">1.6.</span> <span class="toc-text">6.SpringBoot启动原理</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/6d37548c.html" title="SpringBoot单元测试"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot单元测试"/></a><div class="content"><a class="title" href="/posts/6d37548c.html" title="SpringBoot单元测试">SpringBoot单元测试</a><time datetime="2023-07-02T00:00:00.000Z" title="发表于 2023-07-02 00:00:00">2023-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/dcf57196.html" title="SpringBoot核心特性"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot核心特性"/></a><div class="content"><a class="title" href="/posts/dcf57196.html" title="SpringBoot核心特性">SpringBoot核心特性</a><time datetime="2023-07-02T00:00:00.000Z" title="发表于 2023-07-02 00:00:00">2023-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发1-自动配置原理浅析"/></a><div class="content"><a class="title" href="/posts/d5a9e6d8.html" title="SpringBoot Web开发1-自动配置原理浅析">SpringBoot Web开发1-自动配置原理浅析</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发2-路径匹配"/></a><div class="content"><a class="title" href="/posts/10ba68de.html" title="SpringBoot Web开发2-路径匹配">SpringBoot Web开发2-路径匹配</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2ba4c64a.html" title="SpringBoot Web开发3-内容协商"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot Web开发3-内容协商"/></a><div class="content"><a class="title" href="/posts/2ba4c64a.html" title="SpringBoot Web开发3-内容协商">SpringBoot Web开发3-内容协商</a><time datetime="2023-07-01T00:00:00.000Z" title="发表于 2023-07-01 00:00:00">2023-07-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Fredo</div><div id="workboard"><img class="workSituationImg boardsign" src="/img/svg/work.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title="博客框架为Hexo"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo"/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" style="margin-inline:5px" data-title="本站已备案" title="本站已备案"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/svg/beian.svg" alt="本站已备案"/></a><a class="github-badge" target="_blank" href="https://github.com/fu-jw" style="margin-inline:5px" data-title="本站由Github托管" title="本站由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站由Github托管"/></a></p></div></footer></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/avatar.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
 let loadingPercentageTimer = setInterval(function() {
   var progressBar = document.querySelector(".pace-progress");
   if (!progressBar) return
