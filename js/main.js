@@ -142,7 +142,7 @@ var vegetablesAndFruits = [
   "柚子",
   "火龙果",
 ];
-document.addEventListener("DOMContentLoaded", function () {
+
   function onDragStart(event) {
     // event.preventDefault();
     dragStartX = getEventX(event);
@@ -1485,4 +1485,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   refreshFn();
   unRefreshFn();
-});
+
+  
